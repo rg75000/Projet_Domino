@@ -2,7 +2,7 @@ import random
 
 """
 [Module secondaire]
-Ce module est destiné à la définition des classes domino, main et talon car ces classes sont taille raisonable
+Ce module est destiné à la définition des classes Domino, Hand et Talon car ces classes sont taille raisonable
 """
 
 class Domino:
@@ -46,9 +46,9 @@ class Domino:
         return(Domino(self.valb,self.vala))
 
 
-class talon(list):
+class Talon(list):
     """
-    La classe talon modélise le talon contenant tous les dominos au début d'une partie
+    La classe Talon modélise le talon contenant tous les dominos au début d'une partie
     """
     def __init__(self,pt_max):
         """
