@@ -5,7 +5,7 @@ import random
 Ce module est destiné à la définition des classes domino, main et talon car ces classes sont taille raisonable
 """
 
-class domino:
+class Domino:
     """
     La classe domino modelise un domino par ses valeurs et la position des demi-dominos
     Initialement les dominos ne sont pas posé sur le plateau donc leurs positions sont à None
@@ -43,7 +43,7 @@ class domino:
 
     def inverted(self):
         """return un domino inversé"""
-        return(domino(self.valb,self.vala))
+        return(Domino(self.valb,self.vala))
 
 
 class talon(list):
@@ -58,7 +58,7 @@ class talon(list):
         """
         for i in range(pt_max,-1,-1):
             for j in range(i,-1,-1):
-                self.append( domino(i,j) )
+                self.append( Domino(i,j) )
 
     def tirer(self):
         """
